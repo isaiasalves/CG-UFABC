@@ -1,1 +1,1 @@
-# CG-UFABC
+# Computação Gráfica-UFABC
