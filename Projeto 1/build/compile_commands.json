@@ -1,0 +1,112 @@
+[
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_application.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_application.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_application.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_elapsedtimer.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_elapsedtimer.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_elapsedtimer.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_exception.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_exception.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_exception.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_image.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_image.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_image.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_openglfunctions.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_openglfunctions.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_openglfunctions.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_openglwindow.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_openglwindow.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_openglwindow.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_string.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_string.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_string.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_trackball.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_trackball.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/abcg_trackball.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_demo.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_draw.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_widgets.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_impl_sdl.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_impl_sdl.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_impl_sdl.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/imgui",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_impl_opengl3.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/abcg/external/fmt",
+  "command": "/bin/g++-10   -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/fmt.dir/format.cc.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt/format.cc\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt/format.cc"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/main.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/main.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/main.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/openglwindow.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/openglwindow.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/openglwindow.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/asteroids.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/asteroids.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/asteroids.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/bullets.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/bullets.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/bullets.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/ship.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/ship.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/ship.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/starlayers.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/starlayers.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/starlayers.cpp"
+},
+{
+  "directory": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/build/examples/asteroids",
+  "command": "/bin/g++-10   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/fmt\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/gsl\" -I\"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/abcg/external\"  -O2 -g -DNDEBUG -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/ammobar.cpp.o -c \"/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/ammobar.cpp\"",
+  "file": "/home/zell/Documents/CG/Atividades/Projeto 1/abcg/examples/asteroids/ammobar.cpp"
+}
+]
