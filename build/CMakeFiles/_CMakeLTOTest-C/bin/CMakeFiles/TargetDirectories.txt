@@ -1,0 +1,4 @@
+/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/rebuild_cache.dir
+/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/edit_cache.dir
+/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir
+/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir
