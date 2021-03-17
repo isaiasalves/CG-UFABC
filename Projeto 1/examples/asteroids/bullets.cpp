@@ -1,4 +1,5 @@
 #include "bullets.hpp"
+#include "ammobar.hpp"
 
 #include <cppitertools/itertools.hpp>
 #include <glm/gtx/rotate_vector.hpp>
@@ -75,12 +76,12 @@ void Bullets::terminateGL() {
   glDeleteVertexArrays(1, &m_vao);
 }
 
-void Bullets::update(Ship &ship, const GameData &gameData, float deltaTime) {
+void Bullets::update(Ship &ship, const GameData &gameData, float deltaTime, AmmoBar &ammoBar) {
   // Create a pair of bullets
   if (gameData.m_input[static_cast<size_t>(Input::Fire)] &&
       gameData.m_state == State::Playing) {
     // At least 250 ms must have passed since the last bullets
-    if (ship.m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
+    if (ship.m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0 && ammoBar.m_ammunitionCount > 0) {
       ship.m_bulletCoolDownTimer.restart();
 
       // Bullets are shot in the direction of the ship's forward vector
@@ -99,6 +100,9 @@ void Bullets::update(Ship &ship, const GameData &gameData, float deltaTime) {
 
       // Moves ship in the opposite direction
       ship.m_velocity -= forward * 0.1f;
+
+      // Decrease ammo count
+      ammoBar.m_ammunitionCount -= 1;
     }
   }
 

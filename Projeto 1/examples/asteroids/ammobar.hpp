@@ -21,10 +21,8 @@ class AmmoBar {
   //void setRotation(float rotation) { m_rotation = rotation; }
 
  private:
-  friend Asteroids;
-  friend Bullets;
   friend OpenGLWindow;
-  friend StarLayers;
+  friend Bullets;
 
   GLuint m_program{};
   //GLint m_translationLoc{};
@@ -35,6 +33,8 @@ class AmmoBar {
   GLuint m_vao{};
   GLuint m_vbo{};
   GLuint m_ebo{};
+
+  int m_ammunitionCount = 40;
 
   glm::vec4 m_color{1};
   //float m_rotation{};

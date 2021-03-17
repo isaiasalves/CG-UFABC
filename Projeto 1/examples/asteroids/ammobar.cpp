@@ -12,29 +12,49 @@ void AmmoBar::initializeGL(GLuint program){
   m_scaleLoc = glGetUniformLocation(m_program, "scale");
   //m_translationLoc = glGetUniformLocation(m_program, "translation");
 
- // m_rotation = 0.0f;
-  //m_translation = glm::vec2(0);
-  //m_velocity = glm::vec2(0);
 
-  std::array<glm::vec2, 4> positions{
-     
-      glm::vec2{-120.0f, -120.0f}, glm::vec2{-120.0f, -110.0f},
-      glm::vec2{-115.0f, -110.0f}, glm::vec2{-115.0f, -120.0f}
+int indexA = 0;
+int indexB = 0;
 
-     
-  };
+std::array<glm::vec2, 160> positions{}; //Quantidade de quadrados(m_ammunitionCount) * 4
+std::array<int,240> indices{}; //Quantidade de quadrados(m_ammunitionCount) * 6
+
+//Desenha um quadrado por vez, assim, a cada iteração cada ponto deverá ser deslocado na posição X
+for (int i = 0; i < m_ammunitionCount; i++) {
+    int deslocamento = 5;
+    int espacoEntreQuadrados = 1;
+    int fator = ((deslocamento + espacoEntreQuadrados) * i);
+
+    //Posição de cada ponto do quadrado
+    float P0x = -120.0f + fator;  float P0y = -120.0f;
+    float P1x = -120.0f + fator;  float P1y = -110.0f;
+    float P2x = -115.0f + fator;  float P2y = -110.0f;
+    float P3x = -115.0f + fator;  float P3y = -120.0f;
+
+    positions[indexA] = glm::vec2{P0x, P0y};
+    positions[indexA+1] = glm::vec2{P1x, P1y};
+    positions[indexA+2] = glm::vec2{P2x, P2y};
+    positions[indexA+3] = glm::vec2{P3x, P3y};
+
+
+    //Montagem do array de indices
+    indices[indexB] = indexA;
+    indices[indexB+1] = indexA+1;
+    indices[indexB+2] = indexA+2;
+    indices[indexB+3] = indexA+0;
+    indices[indexB+4] = indexA+2;
+    indices[indexB+5] = indexA+3;
+    
+    indexA += 4;
+    indexB += 6;
+}
 
   //Normalize
   for (auto &position :positions) {
     position /= glm::vec2{15.5f, 15.5f};
   }
 
-  std::array indices{
-                     0, 1, 2,
-                     0, 2, 3,
-                    };
-
-  // Generate VBO
+   // Generate VBO
   glGenBuffers(1, &m_vbo);
   glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
   glBufferData(GL_ARRAY_BUFFER, sizeof(positions), positions.data(),
@@ -98,7 +118,10 @@ void AmmoBar::paintGL(const GameData &gameData) {
   // }
 
   glUniform4fv(m_colorLoc, 1, &m_color.r);
-  glDrawElements(GL_TRIANGLES, 2 * 3, GL_UNSIGNED_INT, nullptr);
+
+ 
+  glDrawElements(GL_TRIANGLES, (m_ammunitionCount * 2) * 3, GL_UNSIGNED_INT, nullptr);
+  
 
   glBindVertexArray(0);
 
@@ -115,6 +138,12 @@ void AmmoBar::update(const GameData &gameData, float deltaTime) {
  
   if (gameData.m_input[static_cast<size_t>(Input::Fire)] &&
       gameData.m_state == State::Playing) {
-   
+      
+      // if (m_decrease == 0) {
+      //     m_ammunitionCount -= 1;
+      //     m_decrease = 4;
+      // } else {
+      //   m_decrease -= 1;
+      // }
   }
 }
