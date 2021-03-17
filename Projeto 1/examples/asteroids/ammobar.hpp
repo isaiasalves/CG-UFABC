@@ -22,6 +22,7 @@ class AmmoBar {
 
  private:
   friend OpenGLWindow;
+  friend Bullets;
 
   GLuint m_program{};
   //GLint m_translationLoc{};
@@ -33,7 +34,8 @@ class AmmoBar {
   GLuint m_vbo{};
   GLuint m_ebo{};
 
-  GLuint m_eita = 0;
+  int m_ammunitionCount = 40;
+  int m_decrease = 2;
 
   glm::vec4 m_color{1};
   //float m_rotation{};
