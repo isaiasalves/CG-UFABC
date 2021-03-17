@@ -35,7 +35,6 @@ class AmmoBar {
   GLuint m_ebo{};
 
   int m_ammunitionCount = 40;
-  int m_decrease = 2;
 
   glm::vec4 m_color{1};
   //float m_rotation{};

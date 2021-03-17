@@ -139,11 +139,11 @@ void AmmoBar::update(const GameData &gameData, float deltaTime) {
   if (gameData.m_input[static_cast<size_t>(Input::Fire)] &&
       gameData.m_state == State::Playing) {
       
-      if (m_decrease == 0) {
-          m_ammunitionCount -= 1;
-          m_decrease = 4;
-      } else {
-        m_decrease -= 1;
-      }
+      // if (m_decrease == 0) {
+      //     m_ammunitionCount -= 1;
+      //     m_decrease = 4;
+      // } else {
+      //   m_decrease -= 1;
+      // }
   }
 }
