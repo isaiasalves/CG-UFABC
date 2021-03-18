@@ -9,3 +9,6 @@ Harlen Batagelo
 ## License
 
 MIT
+
+# Daniel
+# Isaias
