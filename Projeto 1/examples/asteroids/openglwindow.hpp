@@ -29,6 +29,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
 
   int m_viewportWidth{};
   int m_viewportHeight{};
+  int m_ammoBoxesCount = 2;
 
   GameData m_gameData;
 

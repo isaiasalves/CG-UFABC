@@ -91,9 +91,9 @@ AmmoBoxes::AmmoBox AmmoBoxes::createAmmobox(glm::vec2 translation,
 
   // Choose a random color (actually, a grayscale)
   std::uniform_real_distribution<float> randomIntensity(0.5f, 1.0f);
-  ammobox.m_color = glm::vec4(1) * randomIntensity(re);
+  ammobox.m_color = {0.36f, 0.83f, 1.00f, 1.0f};
 
-  ammobox.m_color.a = 13.0f;
+  ammobox.m_color.a = 1.0f;
   ammobox.m_rotation = 0.0f;
   ammobox.m_scale = scale;
   ammobox.m_translation = translation;
@@ -108,10 +108,10 @@ AmmoBoxes::AmmoBox AmmoBoxes::createAmmobox(glm::vec2 translation,
   // Create geometry
   std::vector<glm::vec2> positions(0);
   positions.emplace_back(0, 0);
-  auto step{M_PI * 2 / ammobox.m_polygonSides};
-  std::uniform_real_distribution<float> randomRadius(0.8f, 1.0f);
+  auto step{M_PI * 2 / 4};
+  
   for (auto angle : iter::range(0.0, M_PI * 2, step)) {
-    auto radius{randomRadius(re)};
+    auto radius{0.2};
     positions.emplace_back(radius * std::cos(angle), radius * std::sin(angle));
   }
   positions.push_back(positions.at(1));
