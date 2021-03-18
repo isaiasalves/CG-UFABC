@@ -11,6 +11,7 @@
 #include "ship.hpp"
 #include "starlayers.hpp"
 #include "ammobar.hpp"
+#include "ammoboxes.hpp"
 
 class OpenGLWindow : public abcg::OpenGLWindow {
  protected:
@@ -36,6 +37,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   Ship m_ship;
   StarLayers m_starLayers;
   AmmoBar m_ammoBar;
+  AmmoBoxes m_ammoBoxes;
 
   abcg::ElapsedTimer m_restartWaitTimer;
 

@@ -3,6 +3,7 @@
 
 #include "abcg.hpp"
 #include "abcg_exception.hpp"
+#include "ammoboxes.hpp"
 
 void OpenGLWindow::handleEvent(SDL_Event &event) {
   // Keyboard events
@@ -92,8 +93,10 @@ void OpenGLWindow::restart() {
   m_gameData.m_state = State::Playing;
   m_starLayers.initializeGL(m_starsProgram, 25);
   m_ship.initializeGL(m_objectsProgram);
+  m_ammoBar.m_ammunitionCount = 40;
   m_ammoBar.initializeGL(m_ammoBarProgram);
-  m_asteroids.initializeGL(m_objectsProgram, 3);
+  m_ammoBoxes.initializeGL(m_objectsProgram, 3);
+  m_asteroids.initializeGL(m_objectsProgram, 0);
   m_bullets.initializeGL(m_objectsProgram);
 }
 
@@ -110,8 +113,9 @@ void OpenGLWindow::update(){
         m_ship.update(m_gameData, deltaTime);
         m_ammoBar.update(m_gameData,deltaTime);
         m_starLayers.update(m_ship, deltaTime);
-        m_asteroids.update(m_ship, deltaTime);
-        m_bullets.update(m_ship, m_gameData, deltaTime);
+        m_ammoBoxes.update(m_ship, deltaTime);
+        m_asteroids.update(m_ship, 0);
+        m_bullets.update(m_ship, m_gameData, deltaTime, m_ammoBar);
 
         if (m_gameData.m_state == State::Playing) { 
           checkCollisions();
@@ -127,6 +131,7 @@ void OpenGLWindow::paintGL() {
 
   m_starLayers.paintGL();
   m_asteroids.paintGL();
+  m_ammoBoxes.paintGL();
   m_bullets.paintGL();
   m_ship.paintGL(m_gameData);
   m_ammoBar.paintGL(m_gameData);
@@ -171,6 +176,7 @@ void OpenGLWindow::terminateGL() {
   glDeleteProgram(m_ammoBarProgram);
 
   m_asteroids.terminateGL();
+  m_ammoBoxes.terminateGL();
   m_bullets.terminateGL();
   m_ship.terminateGL();
   m_ammoBar.terminateGL();
@@ -179,7 +185,7 @@ void OpenGLWindow::terminateGL() {
 
 
 void OpenGLWindow::checkCollisions() {
-  // Check collision between ship and asteroids
+  //Check collision between ship and asteroids
   for (auto &asteroid : m_asteroids.m_asteroids) {
     auto asteroidTranslation{asteroid.m_translation};
     auto distance{glm::distance(m_ship.m_translation, asteroidTranslation)};
@@ -190,7 +196,18 @@ void OpenGLWindow::checkCollisions() {
     }
   }
 
-  // Check collision between bullets and asteroids
+  // Check collision between ship and ammoBoxes
+  // for (auto &ammoBox : m_ammoBoxes.m_ammoboxes) {
+  //   auto ammoBoxTranslation{ammoBox.m_translation};
+  //   auto distance{glm::distance(m_ship.m_translation, ammoBoxTranslation)};
+
+  //   if (distance < m_ship.m_scale * 0.9f + ammoBox.m_scale * 0.85f) {
+  //     m_gameData.m_state = State::GameOver;
+  //     m_restartWaitTimer.restart();
+  //   }
+  // }
+
+  //Check collision between bullets and asteroids
   for (auto &bullet : m_bullets.m_bullets) {
     if (bullet.m_dead) continue;
 
@@ -209,6 +226,24 @@ void OpenGLWindow::checkCollisions() {
       }
     }
 
+  // for (auto &bullet : m_bullets.m_bullets) {
+  //   if (bullet.m_dead) continue;
+
+  //   for (auto &ammoBox : m_ammoBoxes.m_ammoboxes) {
+  //     for (auto i : {-2, 0, 2}) {
+  //       for (auto j : {-2, 0, 2}) {
+  //         auto ammoBoxTranslation{ammoBox.m_translation + glm::vec2(i, j)};
+  //         auto distance{
+  //             glm::distance(bullet.m_translation, ammoBoxTranslation)};
+
+  //         if (distance < m_bullets.m_scale + ammoBox.m_scale * 0.85f) {
+  //           ammoBox.m_hit = true;
+  //           bullet.m_dead = true;
+  //         }
+  //       }
+  //     }
+  //   }
+
     // Break asteroids marked as hit
     for (auto &asteroid : m_asteroids.m_asteroids) {
       if (asteroid.m_hit && asteroid.m_scale > 0.10f) {
@@ -223,14 +258,27 @@ void OpenGLWindow::checkCollisions() {
       }
     }
 
-    m_asteroids.m_asteroids.remove_if(
-        [](const Asteroids::Asteroid &a) { return a.m_hit; });
+    //  for (auto &ammoBox : m_ammoBoxes.m_ammoboxes) {
+    //   if (ammoBox.m_hit && ammoBox.m_scale > 0.10f) {
+    //     std::uniform_real_distribution<float> m_randomDist{-1.0f, 1.0f};
+    //     std::generate_n(std::back_inserter(m_ammoBoxes.m_ammoboxes), 3, [&]() {
+    //       glm::vec2 offset{m_randomDist(m_randomEngine),
+    //                        m_randomDist(m_randomEngine)};
+    //       return m_ammoBoxes.createAmmobox(
+    //           ammoBox.m_translation + offset * ammoBox.m_scale * 0.5f,
+    //           ammoBox.m_scale * 0.5f);
+    //     });
+    //   }
+    // }
+
+     m_ammoBoxes.m_ammoboxes.remove_if(
+         [](const AmmoBoxes::AmmoBox &a) { return a.m_hit; });
   }
 }
 
 void OpenGLWindow::checkWinCondition() {
-  if (m_asteroids.m_asteroids.empty()) {
-    m_gameData.m_state = State::Win;
-    m_restartWaitTimer.restart();
-  }
+  // if (m_asteroids.m_asteroids.empty()) {
+  //   m_gameData.m_state = State::Win;
+  //   m_restartWaitTimer.restart();
+  // }
 }
