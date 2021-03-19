@@ -1,8 +1,8 @@
-# Install script for directory: /home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external
+# Install script for directory: C:/CG/CG-UFABC/abcg/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/abcg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,23 +27,23 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui/cmake_install.cmake")
-  include("/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/cppitertools/cmake_install.cmake")
-  include("/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/fmt/cmake_install.cmake")
-  include("/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/glm/cmake_install.cmake")
-  include("/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/gsl/cmake_install.cmake")
+  include("C:/CG/CG-UFABC/build/abcg/external/imgui/cmake_install.cmake")
+  include("C:/CG/CG-UFABC/build/abcg/external/cppitertools/cmake_install.cmake")
+  include("C:/CG/CG-UFABC/build/abcg/external/fmt/cmake_install.cmake")
+  include("C:/CG/CG-UFABC/build/abcg/external/glm/cmake_install.cmake")
+  include("C:/CG/CG-UFABC/build/abcg/external/gsl/cmake_install.cmake")
 
 endif()
 
