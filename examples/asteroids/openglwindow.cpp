@@ -3,6 +3,7 @@
 
 #include "abcg.hpp"
 #include "abcg_exception.hpp"
+#include "ammoboxes.hpp"
 
 void OpenGLWindow::handleEvent(SDL_Event &event) {
   // Keyboard events
@@ -92,7 +93,9 @@ void OpenGLWindow::restart() {
   m_gameData.m_state = State::Playing;
   m_starLayers.initializeGL(m_starsProgram, 25);
   m_ship.initializeGL(m_objectsProgram);
+  m_ammoBar.m_ammunitionCount = 40;
   m_ammoBar.initializeGL(m_ammoBarProgram);
+  m_ammoBoxes.initializeGL(m_objectsProgram, m_ammoBoxesCount);
   m_asteroids.initializeGL(m_objectsProgram, 3);
   m_bullets.initializeGL(m_objectsProgram);
 }
@@ -110,6 +113,7 @@ void OpenGLWindow::update(){
         m_ship.update(m_gameData, deltaTime);
         m_ammoBar.update(m_gameData,deltaTime);
         m_starLayers.update(m_ship, deltaTime);
+        m_ammoBoxes.update(m_ship, deltaTime);
         m_asteroids.update(m_ship, deltaTime);
         m_bullets.update(m_ship, m_gameData, deltaTime, m_ammoBar);
 
@@ -127,6 +131,7 @@ void OpenGLWindow::paintGL() {
 
   m_starLayers.paintGL();
   m_asteroids.paintGL();
+  m_ammoBoxes.paintGL();
   m_bullets.paintGL();
   m_ship.paintGL(m_gameData);
   m_ammoBar.paintGL(m_gameData);
@@ -171,6 +176,7 @@ void OpenGLWindow::terminateGL() {
   glDeleteProgram(m_ammoBarProgram);
 
   m_asteroids.terminateGL();
+  m_ammoBoxes.terminateGL();
   m_bullets.terminateGL();
   m_ship.terminateGL();
   m_ammoBar.terminateGL();
@@ -188,6 +194,22 @@ void OpenGLWindow::checkCollisions() {
       m_gameData.m_state = State::GameOver;
       m_restartWaitTimer.restart();
     }
+  }
+
+ // Check whether ship has collected ammoBox
+  for (auto &ammoBox : m_ammoBoxes.m_ammoboxes) {
+    auto ammoBoxTranslation{ammoBox.m_translation};
+    auto distance{glm::distance(m_ship.m_translation, ammoBoxTranslation)};
+
+    if (distance < m_ship.m_scale * 0.9f + ammoBox.m_scale * 0.15f) {
+      m_ammoBar.m_ammunitionCount = 40;
+      ammoBox.m_hit = true;
+    }
+  }
+
+  for (int i =0 ; i <= m_ammoBoxesCount; i++) {
+      m_ammoBoxes.m_ammoboxes.remove_if(
+              [](const AmmoBoxes::AmmoBox &a) { return a.m_hit; });
   }
 
   // Check collision between bullets and asteroids
@@ -225,6 +247,8 @@ void OpenGLWindow::checkCollisions() {
 
     m_asteroids.m_asteroids.remove_if(
         [](const Asteroids::Asteroid &a) { return a.m_hit; });
+
+       
   }
 }
 
