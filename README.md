@@ -1,6 +1,6 @@
 # Integrantes
 
-    Daniel Vieira Batista RA 11106614
+    Daniel Vieira Batista RA: 11106614
 
     Isaias Alves da Silva  RA: 11108611
   
