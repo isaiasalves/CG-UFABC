@@ -6,6 +6,7 @@
 
 class Asteroids;
 class Bullets;
+class Bombs;
 class OpenGLWindow;
 class StarLayers;
 
@@ -23,6 +24,7 @@ class AmmoBar {
  private:
   friend OpenGLWindow;
   friend Bullets;
+  friend Bombs;
 
   GLuint m_program{};
   //GLint m_translationLoc{};

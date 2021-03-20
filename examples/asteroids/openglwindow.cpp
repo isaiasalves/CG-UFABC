@@ -17,6 +17,9 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.set(static_cast<size_t>(Input::Left));
     if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
       m_gameData.m_input.set(static_cast<size_t>(Input::Right));
+    // Colocando código da bomba, quando apertar a tecla B vai mandar a bomba
+    if (event.key.keysym.sym == SDLK_b)
+      m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
   }
   if (event.type == SDL_KEYUP) {
     if (event.key.keysym.sym == SDLK_SPACE)
@@ -29,6 +32,9 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.reset(static_cast<size_t>(Input::Left));
     if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Right));
+    // Colocando código da bomba, quando apertar a tecla B vai mandar a bomba
+    if (event.key.keysym.sym == SDLK_b)
+      m_gameData.m_input.reset(static_cast<size_t>(Input::Bomb));
   }
 
   // Mouse events
@@ -37,12 +43,18 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.set(static_cast<size_t>(Input::Fire));
     if (event.button.button == SDL_BUTTON_RIGHT)
       m_gameData.m_input.set(static_cast<size_t>(Input::Up));
+    // Colocando código da bomba, quando apertar a tecla do mouse central vai mandar a bomba
+    if (event.button.button == SDL_BUTTON_MIDDLE)
+      m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
   }
   if (event.type == SDL_MOUSEBUTTONUP) {
     if (event.button.button == SDL_BUTTON_LEFT)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Fire));
     if (event.button.button == SDL_BUTTON_RIGHT)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Up));
+    // Colocando código da bomba, quando apertar a tecla do mouse central vai mandar a bomba
+    if (event.button.button == SDL_BUTTON_MIDDLE)
+      m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
   }
   if (event.type == SDL_MOUSEMOTION) {
     glm::ivec2 mousePosition;
@@ -59,7 +71,7 @@ void OpenGLWindow::initializeGL() {
   // Load a new font
   ImGuiIO &io{ImGui::GetIO()};
   auto filename{getAssetsPath() + "Inconsolata-Medium.ttf"};
-  m_font = io.Fonts->AddFontFromFileTTF(filename.c_str(), 60.0f);
+  m_font = io.Fonts->AddFontFromFileTTF(filename.c_str(), 60.0f); // mudei o tamanho da fonte de 60 pra 80
   if (m_font == nullptr) {
     throw abcg::Exception{abcg::Exception::Runtime("Cannot load font file")};
   }
@@ -71,7 +83,7 @@ void OpenGLWindow::initializeGL() {
   // Create program to render the stars
   m_starsProgram = createProgramFromFile(getAssetsPath() + "stars.vert",
                                        getAssetsPath() + "stars.frag");
-  // Create program to render the stars
+  // Create program to render the ammobar
   m_ammoBarProgram = createProgramFromFile(getAssetsPath() + "ammobar.vert",
                                            getAssetsPath() + "ammobar.frag");
 
@@ -95,12 +107,13 @@ void OpenGLWindow::restart() {
   m_ammoBar.initializeGL(m_ammoBarProgram);
   m_asteroids.initializeGL(m_objectsProgram, 3);
   m_bullets.initializeGL(m_objectsProgram);
+  m_bombs.initializeGL(m_objectsProgram);
 }
 
 void OpenGLWindow::update(){
     float deltaTime{static_cast<float>(getDeltaTime())};
 
-
+    // Wait 5 seconds before restarting
     if (m_gameData.m_state != State::Playing &&
         m_restartWaitTimer.elapsed() > 5) {
             restart();
@@ -112,6 +125,7 @@ void OpenGLWindow::update(){
         m_starLayers.update(m_ship, deltaTime);
         m_asteroids.update(m_ship, deltaTime);
         m_bullets.update(m_ship, m_gameData, deltaTime, m_ammoBar);
+        m_bombs.update(m_ship, m_gameData, deltaTime, m_ammoBar);
 
         if (m_gameData.m_state == State::Playing) { 
           checkCollisions();
@@ -128,6 +142,7 @@ void OpenGLWindow::paintGL() {
   m_starLayers.paintGL();
   m_asteroids.paintGL();
   m_bullets.paintGL();
+  m_bombs.paintGL();
   m_ship.paintGL(m_gameData);
   m_ammoBar.paintGL(m_gameData);
 }
@@ -148,9 +163,9 @@ void OpenGLWindow::paintUI() {
     ImGui::PushFont(m_font);
 
     if (m_gameData.m_state == State::GameOver) {
-      ImGui::Text("Game Over!");
+      ImGui::Text("Game Over! :'(");
     } else if (m_gameData.m_state == State::Win) {
-      ImGui::Text("*You Win!*");
+      ImGui::Text("*You Win!* :D");
     }
 
     ImGui::PopFont();
@@ -172,6 +187,7 @@ void OpenGLWindow::terminateGL() {
 
   m_asteroids.terminateGL();
   m_bullets.terminateGL();
+  m_bombs.terminateGL();
   m_ship.terminateGL();
   m_ammoBar.terminateGL();
   m_starLayers.terminateGL();
@@ -188,6 +204,30 @@ void OpenGLWindow::checkCollisions() {
       m_gameData.m_state = State::GameOver;
       m_restartWaitTimer.restart();
     }
+  }
+
+  // Check collision between bombs and asteroids
+  for (auto &bomb : m_bombs.m_bombs) {
+    if (bomb.m_dead) continue;
+
+    for (auto &asteroid : m_asteroids.m_asteroids) {
+      for (auto i : {-2, 0, 2}) {
+        for (auto j : {-2, 0, 2}) {
+          auto asteroidTranslation{asteroid.m_translation + glm::vec2(i, j)};
+          auto distance{
+              glm::distance(bomb.m_translation, asteroidTranslation)};
+
+          if (distance < m_bombs.m_scale + asteroid.m_scale * 0.85f) {
+            asteroid.m_bhit = true;
+            bomb.m_dead = true;
+          }
+        }
+      }
+    }
+
+    m_asteroids.m_asteroids.remove_if(
+        [](const Asteroids::Asteroid &a) { return a.m_bhit; });
+        
   }
 
   // Check collision between bullets and asteroids
@@ -211,7 +251,7 @@ void OpenGLWindow::checkCollisions() {
 
     // Break asteroids marked as hit
     for (auto &asteroid : m_asteroids.m_asteroids) {
-      if (asteroid.m_hit && asteroid.m_scale > 0.10f) {
+      if (asteroid.m_hit && !asteroid.m_bhit  && asteroid.m_scale > 0.10f) {
         std::uniform_real_distribution<float> m_randomDist{-1.0f, 1.0f};
         std::generate_n(std::back_inserter(m_asteroids.m_asteroids), 3, [&]() {
           glm::vec2 offset{m_randomDist(m_randomEngine),
@@ -225,7 +265,9 @@ void OpenGLWindow::checkCollisions() {
 
     m_asteroids.m_asteroids.remove_if(
         [](const Asteroids::Asteroid &a) { return a.m_hit; });
+        
   }
+
 }
 
 void OpenGLWindow::checkWinCondition() {

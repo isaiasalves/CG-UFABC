@@ -6,6 +6,7 @@
 
 class Asteroids;
 class Bullets;
+class Bombs;
 class OpenGLWindow;
 class StarLayers;
 
@@ -21,6 +22,7 @@ class Ship {
  private:
   friend Asteroids;
   friend Bullets;
+  friend Bombs;
   friend OpenGLWindow;
   friend StarLayers;
 
@@ -42,6 +44,8 @@ class Ship {
 
   abcg::ElapsedTimer m_trailBlinkTimer;
   abcg::ElapsedTimer m_bulletCoolDownTimer;
+  // tempo de disparo da bomba
+  abcg::ElapsedTimer m_bombCoolDownTimer;
 };
 
 #endif

@@ -8,6 +8,7 @@
 #include "abcg.hpp"
 #include "asteroids.hpp"
 #include "bullets.hpp"
+#include "bombs.hpp"
 #include "ship.hpp"
 #include "starlayers.hpp"
 #include "ammobar.hpp"
@@ -33,6 +34,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
 
   Asteroids m_asteroids;
   Bullets m_bullets;
+  Bombs m_bombs;
   Ship m_ship;
   StarLayers m_starLayers;
   AmmoBar m_ammoBar;

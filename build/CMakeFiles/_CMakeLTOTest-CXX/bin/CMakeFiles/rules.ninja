@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule CXX_COMPILER__boo_
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\msys64\mingw64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -o $out -c $in
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -o $out -c $in
   description = Building CXX object $out
 
 
@@ -33,7 +33,7 @@ rule CXX_COMPILER__boo_
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__boo_
-  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -44,7 +44,7 @@ rule CXX_EXECUTABLE_LINKER__boo_
 rule CXX_COMPILER__foo_
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\msys64\mingw64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -o $out -c $in
+  command = C:\msys64\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -o $out -c $in
   description = Building CXX object $out
 
 

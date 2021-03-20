@@ -604,6 +604,15 @@ build examples/asteroids/CMakeFiles/asteroids.dir/ammobar.cpp.obj: CXX_COMPILER_
   TARGET_COMPILE_PDB = examples\asteroids\CMakeFiles\asteroids.dir\
   TARGET_PDB = bin\asteroids.pdb
 
+build examples/asteroids/CMakeFiles/asteroids.dir/bombs.cpp.obj: CXX_COMPILER__asteroids_Debug ../examples/asteroids/bombs.cpp || cmake_object_order_depends_target_asteroids
+  DEP_FILE = examples\asteroids\CMakeFiles\asteroids.dir\bombs.cpp.obj.d
+  FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
+  INCLUDES = -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external
+  OBJECT_DIR = examples\asteroids\CMakeFiles\asteroids.dir
+  OBJECT_FILE_DIR = examples\asteroids\CMakeFiles\asteroids.dir
+  TARGET_COMPILE_PDB = examples\asteroids\CMakeFiles\asteroids.dir\
+  TARGET_PDB = bin\asteroids.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target asteroids
@@ -612,7 +621,7 @@ build examples/asteroids/CMakeFiles/asteroids.dir/ammobar.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable bin\asteroids.exe
 
-build bin/asteroids.exe: CXX_EXECUTABLE_LINKER__asteroids_Debug examples/asteroids/CMakeFiles/asteroids.dir/main.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/openglwindow.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/asteroids.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/bullets.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/ship.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/starlayers.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/ammobar.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
+build bin/asteroids.exe: CXX_EXECUTABLE_LINKER__asteroids_Debug examples/asteroids/CMakeFiles/asteroids.dir/main.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/openglwindow.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/asteroids.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/bullets.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/ship.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/starlayers.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/ammobar.cpp.obj examples/asteroids/CMakeFiles/asteroids.dir/bombs.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
   FLAGS = -g -flto -fno-fat-lto-objects
   LINK_LIBRARIES = abcg/libabcg.a  -lmingw32  -lSDL2main  -lSDL2  -lglew32  -lopengl32  C:/msys64/mingw64/lib/libglew32.dll.a  -lopengl32  -lglu32  abcg/external/fmt/libfmt.a  abcg/external/imgui/libimgui.a  -lmingw32  -mwindows  C:/msys64/mingw64/lib/libSDL2main.a  C:/msys64/mingw64/lib/libSDL2.dll.a  C:/msys64/mingw64/lib/libSDL2_image.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = examples\asteroids\CMakeFiles\asteroids.dir
