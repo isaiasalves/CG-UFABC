@@ -47,7 +47,7 @@ void AmmoBoxes::paintGL() {
         glUniform2f(m_translationLoc, ammobox.m_translation.x + j,
                     ammobox.m_translation.y + i);
 
-        glDrawArrays(GL_TRIANGLE_FAN, 0, ammobox.m_polygonSides + 2);
+        glDrawArrays(GL_TRIANGLE_FAN, 0, 6);
       }
     }
 
@@ -85,12 +85,6 @@ AmmoBoxes::AmmoBox AmmoBoxes::createAmmobox(glm::vec2 translation,
 
   auto &re{m_randomEngine};  // Shortcut
 
-  // Randomly choose the number of sides
-  std::uniform_int_distribution<int> randomSides(6, 20);
-  ammobox.m_polygonSides = randomSides(re);
-
-  // Choose a random color (actually, a grayscale)
-  std::uniform_real_distribution<float> randomIntensity(0.5f, 1.0f);
   ammobox.m_color = {0.36f, 0.83f, 1.00f, 1.0f};
 
   ammobox.m_color.a = 1.0f;
