@@ -1,112 +1,122 @@
 [
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_application.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_application.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_application.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_application.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_application.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_application.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_elapsedtimer.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_elapsedtimer.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_elapsedtimer.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_elapsedtimer.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_elapsedtimer.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_elapsedtimer.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_exception.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_exception.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_exception.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_exception.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_exception.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_exception.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_image.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_image.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_image.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_image.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_image.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_image.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_openglfunctions.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_openglfunctions.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_openglfunctions.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglfunctions.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_openglfunctions.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_openglfunctions.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_openglwindow.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_openglwindow.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_openglwindow.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglwindow.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_openglwindow.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_openglwindow.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_string.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_string.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_string.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_string.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_string.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_string.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/abcg.dir/abcg_trackball.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_trackball.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/abcg_trackball.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_trackball.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\abcg_trackball.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/abcg_trackball.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_demo.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_demo.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_demo.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui_demo.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui_demo.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_draw.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_draw.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_draw.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui_draw.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui_draw.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_widgets.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_widgets.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_widgets.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui_widgets.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui_widgets.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_impl_sdl.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_impl_sdl.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_impl_sdl.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_sdl.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui_impl_sdl.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui_impl_sdl.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I/opt/local/include -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\"  -g -flto -fno-fat-lto-objects   -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_impl_opengl3.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui/imgui_impl_opengl3.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -I../abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_opengl3.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\imgui\\imgui_impl_opengl3.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/imgui/imgui_impl_opengl3.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/abcg/external/fmt",
-  "command": "/usr/lib/ccache/c++   -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\"  -g -flto -fno-fat-lto-objects   -std=gnu++2a -o CMakeFiles/fmt.dir/format.cc.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt/format.cc\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt/format.cc"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -I../abcg/external/fmt -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\external\\fmt\\CMakeFiles\\fmt.dir\\format.cc.obj -c C:\\CG\\Versao\\CG-UFABC\\abcg\\external\\fmt\\format.cc",
+  "file": "C:/CG/Versao/CG-UFABC/abcg/external/fmt/format.cc"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/main.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/main.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/main.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\main.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\main.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/main.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/openglwindow.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/openglwindow.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/openglwindow.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\openglwindow.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\openglwindow.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/openglwindow.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/asteroids.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/asteroids.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/asteroids.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\asteroids.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\asteroids.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/asteroids.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/bullets.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/bullets.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/bullets.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\bullets.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\bullets.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/bullets.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/ship.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/ship.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/ship.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\bombs.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\bombs.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/bombs.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/starlayers.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/starlayers.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/starlayers.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\ship.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\ship.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/ship.cpp"
 },
 {
-  "directory": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/build/examples/asteroids",
-  "command": "/usr/lib/ccache/c++   -I/usr/include/SDL2 -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/cppitertools\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/fmt\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/glm/..\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/gsl\" -I\"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external/imgui\" -isystem \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/abcg/external\"  -g -flto -fno-fat-lto-objects   -Wall -Wextra -pedantic -std=gnu++2a -o CMakeFiles/asteroids.dir/ammobar.cpp.o -c \"/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/ammobar.cpp\"",
-  "file": "/home/zell/Documents/CG/ATV1/CG-UFABC/Projeto 1/examples/asteroids/ammobar.cpp"
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\starlayers.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\starlayers.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/starlayers.cpp"
+},
+{
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\ammobar.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\ammobar.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/ammobar.cpp"
+},
+{
+  "directory": "C:/CG/Versao/CG-UFABC/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -IC:/msys64/mingw64/include/SDL2 -I../abcg -I../abcg/external/cppitertools -I../abcg/external/fmt -I../abcg/external/glm/.. -I../abcg/external/gsl -I../abcg/external/imgui -isystem ../abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\asteroids\\CMakeFiles\\asteroids.dir\\ammoboxes.cpp.obj -c C:\\CG\\Versao\\CG-UFABC\\examples\\asteroids\\ammoboxes.cpp",
+  "file": "C:/CG/Versao/CG-UFABC/examples/asteroids/ammoboxes.cpp"
 }
 ]

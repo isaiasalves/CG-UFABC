@@ -34,6 +34,7 @@ class AmmoBoxes {
     float m_angularVelocity{};
     glm::vec4 m_color{1};
     bool m_hit{false};
+    bool m_bhit{false};
     int m_polygonSides{};
     float m_rotation{};
     float m_scale{};

@@ -7,6 +7,7 @@
 class Asteroids;
 class AmmoBoxes;
 class Bullets;
+class Bombs;
 class OpenGLWindow;
 class StarLayers;
 
@@ -23,6 +24,7 @@ class Ship {
   friend Asteroids;
   friend AmmoBoxes;
   friend Bullets;
+  friend Bombs;
   friend OpenGLWindow;
   friend StarLayers;
 
@@ -44,6 +46,7 @@ class Ship {
 
   abcg::ElapsedTimer m_trailBlinkTimer;
   abcg::ElapsedTimer m_bulletCoolDownTimer;
+  abcg::ElapsedTimer m_bombCoolDownTimer;
 };
 
 #endif
