@@ -1,5 +1,4 @@
 #include "ammoboxes.hpp"
-#include "ammoboxes.hpp"
 
 #include <cppitertools/itertools.hpp>
 #include <glm/gtx/fast_trigonometry.hpp>
@@ -135,4 +134,5 @@ AmmoBoxes::AmmoBox AmmoBoxes::createAmmobox(glm::vec2 translation,
   glBindVertexArray(0);
 
   return ammobox;
+  
 }

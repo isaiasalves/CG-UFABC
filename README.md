@@ -10,5 +10,5 @@ Harlen Batagelo
 
 MIT
 
-# Daniel
-# Isaias
+Daniel Vieira Batista 11146614
+Isaias 

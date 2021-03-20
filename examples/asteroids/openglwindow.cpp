@@ -12,6 +12,8 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
   if (event.type == SDL_KEYDOWN) {
     if (event.key.keysym.sym == SDLK_SPACE)
       m_gameData.m_input.set(static_cast<size_t>(Input::Fire));
+    if (event.key.keysym.sym == SDLK_b)
+      m_gameData.m_input.set(static_cast<size_t>(Input::Bomba));
     if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
       m_gameData.m_input.set(static_cast<size_t>(Input::Up));
     if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
@@ -20,12 +22,12 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.set(static_cast<size_t>(Input::Left));
     if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
       m_gameData.m_input.set(static_cast<size_t>(Input::Right));
-    if (event.key.keysym.sym == SDLK_b)
-      m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
   }
   if (event.type == SDL_KEYUP) {
     if (event.key.keysym.sym == SDLK_SPACE)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Fire));
+    if (event.key.keysym.sym == SDLK_b)
+      m_gameData.m_input.reset(static_cast<size_t>(Input::Bomba));
     if (event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_w)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Up));
     if (event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_s)
@@ -34,8 +36,6 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.reset(static_cast<size_t>(Input::Left));
     if (event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Right));
-    if (event.key.keysym.sym == SDLK_b)
-      m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
   }
 
   // Mouse events
@@ -44,17 +44,19 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_gameData.m_input.set(static_cast<size_t>(Input::Fire));
     if (event.button.button == SDL_BUTTON_RIGHT)
       m_gameData.m_input.set(static_cast<size_t>(Input::Up));
-    // if (event.button.button == SDL_BUTTON_MIDDLE)
-    //  m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
+    if (event.button.button == SDL_BUTTON_MIDDLE)
+     m_gameData.m_input.set(static_cast<size_t>(Input::Bomba));
   }
+
   if (event.type == SDL_MOUSEBUTTONUP) {
     if (event.button.button == SDL_BUTTON_LEFT)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Fire));
     if (event.button.button == SDL_BUTTON_RIGHT)
       m_gameData.m_input.reset(static_cast<size_t>(Input::Up));
-    // if (event.button.button == SDL_BUTTON_MIDDLE)
-    //  m_gameData.m_input.set(static_cast<size_t>(Input::Bomb));
+    if (event.button.button == SDL_BUTTON_MIDDLE)
+     m_gameData.m_input.reset(static_cast<size_t>(Input::Bomba));
   }
+
   if (event.type == SDL_MOUSEMOTION) {
     glm::ivec2 mousePosition;
     SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
@@ -64,6 +66,7 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
     direction.y = -direction.y;
     m_ship.setRotation(std::atan2(direction.y, direction.x) - M_PI_2);
   }
+  
 }
 
 void OpenGLWindow::initializeGL() {

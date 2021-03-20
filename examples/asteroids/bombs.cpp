@@ -78,10 +78,10 @@ void Bombs::terminateGL() {
 
 void Bombs::update(Ship &ship, const GameData &gameData, float deltaTime, AmmoBar &ammoBar) {
   // Create a pair of bombs
-  if (gameData.m_input[static_cast<size_t>(Input::Bomb)] &&
+  if (gameData.m_input[static_cast<size_t>(Input::Bomba)] &&
       gameData.m_state == State::Playing) {
     // At least 250 ms must have passed since the last bombs
-    if (ship.m_bombCoolDownTimer.elapsed() > 2000.0 / 1000.0 && ammoBar.m_ammunitionCount > 0) {
+    if (ship.m_bombCoolDownTimer.elapsed() > 4 && ammoBar.m_ammunitionCount > 19) {
       ship.m_bombCoolDownTimer.restart();
 
       // Bombs are shot in the direction of the ship's forward vector
@@ -91,8 +91,8 @@ void Bombs::update(Ship &ship, const GameData &gameData, float deltaTime, AmmoBa
       auto bombSpeed{0.5f};
 
       Bomb bomb{.m_dead = false,
-                    .m_translation = ship.m_translation + right * cannonOffset,
-                    .m_velocity = ship.m_velocity + forward * bombSpeed};
+                .m_translation = ship.m_translation + right * cannonOffset,
+                .m_velocity = ship.m_velocity + forward * bombSpeed};
       m_bombs.push_back(bomb);
 
       bomb.m_translation = ship.m_translation - right * cannonOffset;
